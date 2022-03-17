@@ -1,0 +1,229 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+    --back-black: black;
+    --button-one: hsl(0deg 0% 21%);
+    --button-two: hsl(15deg 86% 43%);
+    --button-three: hsl(220deg 4% 86%);
+    --button-four: white;
+}
+
+.back-bl{
+    background-color: var(--button-one);
+}
+
+.back-rd{
+    background-color: var(--button-two);
+}
+
+.back-gr{
+    background-color: var(--button-three);
+    color: hsl(222deg 75% 59%);
+}
+
+.back-wi{
+    background-color: var(--button-four);
+    color: black;
+}
+
+.title, h1{
+    font-size: 40px;
+}
+
+.grey-under{
+    font-size: larger;
+    color: hsl(0deg 0% 46%);
+}
+
+/* header */
+
+header{
+    z-index: 2;
+}
+
+.nav-top{
+    background-color: black;
+}
+
+.nav-top img{
+    width: 60px;
+    padding: 5px 3px;
+}
+
+.fa-magnifying-glass{
+    line-height: 40px;
+}
+
+/* main */
+/* sezione uno */
+
+#jumbo{
+    padding-top: 80px;
+    margin-bottom: 30px;
+    height: 750px;
+    background-image: url(../img/jumbo-bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+#jumbo img{
+    width: 400px;
+}
+
+#jumbo .container div{
+    bottom: 0;
+}
+
+#jumbo p{
+    width: 400px;
+}
+
+/* sezione due */
+
+#card-one{
+    margin-bottom: 70px;
+}
+
+#card-one img{
+    border-radius: 20px;
+}
+
+/* sezione tre */
+
+#psfive{
+    margin-bottom: 20px;
+}
+
+.blu-color{
+    color: hsl(207deg 83% 45%);
+    margin-bottom: -10px;
+}
+
+#psfive .container img + p{
+    margin-top: 20px;
+}
+
+#psfive .container .col-md{
+    border-bottom: 2px solid white;
+}
+
+/* sezione quattro */
+
+.hero{
+    height: 550px;
+    width: 100%;
+    background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.hero img{
+    margin-top: 30px;
+    width: 300px;
+}
+
+.card-two{
+    background-color: hsl(0deg 0% 12%);
+}
+
+.card-two img{
+    border-radius: 20px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+/* sezione cinque */
+
+#psfour{
+    margin-bottom: 40px;
+}
+
+.title span{
+    font-size: medium;
+}
+
+#psfour .card{
+    border: 0px solid white;
+}
+
+#psfour .card-title{
+    font-size: 30px;
+}
+
+/* sezione sei */
+
+#psplus, #psnow{
+    width: 100%;
+    padding: 30px 0;
+}
+
+#psplus{
+    background-color: hsl(20deg 2% 74%);
+}
+
+#psplus img, #psnow img{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 400px;
+}
+
+/* media sezione sei e otto */
+
+@media screen and (min-width: 768px){
+    #psplus, #psnow{
+        height: 350px;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
+
+    #psplus{
+        background-image: url(../img/ps-plus-april-monthly-games-featured-image-block.png);
+    }
+
+    #psnow{
+        background-image: url(../img/ps-now-april-featured-image-block.png);
+    }
+
+    #psplus p, #psnow p{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #psplus, #psnow{
+        height: 450px;
+        padding: 80px 0;
+    }
+}
+
+/* sezione sette */
+
+/* sezione otto */
+
+#psnow{
+    background-color: hsl(230deg 46% 16%);
+}
+
+/* sezione nove */
+
+/* footer */
+
+footer{
+    padding-top: 40px;
+    width: 100%;
+    background-color: hsl(214deg 100% 31%);
+}
+
+footer .row img{
+    height: 120px;
+}
+
+footer ul li{
+    list-style-type: none;
+    margin: 10px 0;
+}
