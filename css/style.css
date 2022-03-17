@@ -39,6 +39,21 @@
     color: hsl(0deg 0% 46%);
 }
 
+/* effetto hover bottoni */
+
+.wrapper{
+    padding: 5px;
+}
+
+.wrapper:hover{
+    background-color: black;
+}
+
+.wrapper:hover .button{
+    border: 5px solid white;
+    z-index: 5;
+}
+
 /* header */
 
 header{
@@ -90,6 +105,32 @@ header{
 
 #card-one img{
     border-radius: 20px;
+    padding: 3px;
+    border: 2px solid transparent;
+    position: relative;
+    top: 0;
+    left: 0;
+    filter: brightness(50%);
+}
+
+/* effetti hover */
+
+#card-one .col-6 .cover:hover + img{  
+    border: 2px solid hsl(207deg 67% 52%);
+    top: -20px;    
+    transition: all 2s;
+    
+}
+
+.cover{
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.cover:hover{
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* sezione tre */
@@ -114,7 +155,6 @@ header{
 /* sezione quattro */
 
 .hero{
-    height: 550px;
     width: 100%;
     background-image: url(../img/it-takes-two-hero-banner-desktop.jpg);
     background-position: center;
@@ -140,10 +180,6 @@ header{
 
 #psfour{
     margin-bottom: 40px;
-}
-
-.title span{
-    font-size: medium;
 }
 
 #psfour .card{
@@ -199,6 +235,11 @@ header{
         height: 450px;
         padding: 80px 0;
     }
+
+    /* media hero */
+    .hero h1, .hero p{
+        width: 30%;
+    }
 }
 
 /* sezione sette */
@@ -210,6 +251,14 @@ header{
 }
 
 /* sezione nove */
+
+#media{
+    margin: 100px 0;
+}
+
+#media p{
+    margin-bottom: 50px;
+}
 
 /* footer */
 
