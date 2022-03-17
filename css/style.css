@@ -10,6 +10,7 @@
     --button-two: hsl(15deg 86% 43%);
     --button-three: hsl(220deg 4% 86%);
     --button-four: white;
+    --button-standard: hsl(216deg 98% 52%);
 }
 
 .back-bl{
@@ -43,15 +44,35 @@
 
 .wrapper{
     padding: 5px;
+    display: inline-block;
 }
 
-.wrapper:hover{
-    background-color: black;
+header .wrapper:hover{
+    background-color: var(--back-black);
 }
 
-.wrapper:hover .button{
-    border: 5px solid white;
-    z-index: 5;
+#jumbo .wrapper:hover, #hero-card .wrapper:hover{
+    background-color: var(--button-two);
+}
+
+#psfive .wrapper:hover, #psfour .wrapper:hover{
+    background-color: var(--button-standard);
+}
+
+#psplus .wrapper:hover{
+    background-color: var(--button-three);
+}
+
+#psnow .wrapper:hover{
+    background-color: var(--button-four);
+}
+
+.wrapper:hover .btn{
+    border: 1px solid white;
+}
+
+#psnow .wrapper:hover .btn{
+    border: 1px solid black;
 }
 
 /* header */
@@ -89,7 +110,7 @@ header{
     width: 400px;
 }
 
-#jumbo .container div{
+#jumbo .container .position-absolute{
     bottom: 0;
 }
 
@@ -110,15 +131,14 @@ header{
     position: relative;
     top: 0;
     left: 0;
-    filter: brightness(50%);
 }
 
 /* effetti hover */
 
 #card-one .col-6 .cover:hover + img{  
     border: 2px solid hsl(207deg 67% 52%);
-    top: -20px;    
-    transition: all 2s;
+    top: -30px;    
+    transition: top 1s;
     
 }
 
@@ -126,11 +146,11 @@ header{
     background-color: rgba(255, 255, 255, 0.5);
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1;
 }
 
 .cover:hover{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 /* sezione tre */
@@ -150,6 +170,12 @@ header{
 
 #psfive .container .col-md{
     border-bottom: 2px solid white;
+}
+
+/* effetti hover */
+
+#psfive .container .cover:hover{
+    border-bottom: 2px solid hsl(207deg 67% 52%);
 }
 
 /* sezione quattro */
@@ -269,7 +295,8 @@ footer{
 }
 
 footer .row img{
-    height: 120px;
+    height: 100px;
+    margin-bottom: 20px;
 }
 
 footer ul li{
