@@ -40,6 +40,37 @@
     color: hsl(0deg 0% 46%);
 }
 
+/* dropdown menu */
+
+.dropdown {
+    position:static !important;
+}
+
+.dropdown-menu.show{
+    border: 0px !important;
+    border-radius: 0px !important;
+    margin-top:0px !important;
+    width:100% !important;
+    animation: animation;
+    animation-duration: 2s;
+    overflow: hidden;
+}
+
+@keyframes animation {
+    from{max-height: 0;}
+    to{max-height: 800px;}
+}
+
+.dropdown-menu a.dropdown-item{
+    display: inline-block !important;
+    width: 100px !important;
+    text-align: center !important;
+}
+
+.nav-link:active i{
+    transform: rotate(180deg);
+}
+
 /* effetto hover bottoni */
 
 .wrapper{
