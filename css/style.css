@@ -2,6 +2,7 @@
 	margin:0;
 	padding: 0;
 	box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 :root{
@@ -67,7 +68,11 @@
     text-align: center !important;
 }
 
-.nav-link:active i{
+.nav-link i{
+    margin-left: 5px;
+}
+
+.nav-link.show i{
     transform: rotate(180deg);
 }
 
@@ -138,7 +143,7 @@ header{
 }
 
 #jumbo img{
-    width: 400px;
+    width: 50%;
 }
 
 #jumbo .container .position-absolute{
@@ -147,6 +152,18 @@ header{
 
 #jumbo p{
     width: 400px;
+}
+
+@media screen and (min-width:768px){
+    #jumbo p{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:992px){
+    #jumbo p{
+        width: 400px;
+    }
 }
 
 /* sezione due */
@@ -170,7 +187,6 @@ header{
     border: 2px solid hsl(207deg 67% 52%);
     top: -30px;    
     transition: top 1s;
-    
 }
 
 .cover{
